@@ -3,6 +3,7 @@ FROM golang:alpine AS builder
 WORKDIR /app
 
 COPY go.mod ./
+COPY template.html ./
 COPY facts.txt ./
 COPY main.go ./
 
